@@ -11,4 +11,4 @@ services:
 
 before_install:
   -  chmod +x ./scripts/*
-  - ./script/travis_mysql_5.7.sh
+  - ./scripts/travis_mysql_5.7.sh
