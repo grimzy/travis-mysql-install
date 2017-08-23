@@ -20,7 +20,7 @@ services:
 
 before_install:
   - sudo /etc/init.d/mysql stop
-  - make start_db $MYSQL_VERSION
+  - make start_db V=$MYSQL_VERSION
 
 install: composer install
 
