@@ -21,6 +21,7 @@ services:
 before_install:
   - sudo /etc/init.d/mysql stop
   - make start_db V=$MYSQL_VERSION
+  - make get_ip
 
 install: composer install
 
