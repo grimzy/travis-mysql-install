@@ -19,6 +19,7 @@ services:
   - docker
 
 before_install:
+  - sudo /etc/init.d/mysql stop
   - make start_db $MYSQL_VERSION
 
 install: composer install
